@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(241, 221, 209);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 900px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+a:hover {
+    color:rgb(214, 124, 22);
+}
+
+
+#div1 {
+    color: rgb(172, 13, 172);
+    font-size: 18pt;
+}
+
+
+.pt18 {
+    font-size: 18pt;
+}
+
+
+.lista {
+    list-style: upper-roman;
+    font-family: sans-serif; /* Negrito */
+    color: rgb(11, 78, 165);
+    font-size: 16pt;
+    font-size: 1.5em;
+}
+li::marker {  /* deixar somente os numeros da tabela "li" */
+    color: rgb(92, 25, 155); 
+}
+
+
+.MBB{
+    display: flex;
+}
+.bloco_imagens{
+    display: flex; /* Alinha as imagens lado a lado */
+    gap: 10px;      /* Cria um espaço (respiro) entre elas */
+    flex-wrap: wrap; /* Se a tela for pequena, as imagens descem para a linha de baixo (evita quebrar o site) */
+    justify-content: center; /* Centraliza as imagens na tela */
+}
+.imagem {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+    display: block;
+    max-width: 100%;
+    border-radius: 15px; 
+    border-left: 20px;
+    margin: 0 auto; /* deixar centralizado */
+}
+.imagem:hover {
+    filter: blur(0px);
+}
+
+
+p {
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+h3{
+    font-size: 18pt; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.caixa_fixa {
+     font-size: 16pt; 
+     position: fixed; 
+     bottom: 20px;  /* Espaçamento do fundo */ 
+     right: 20px;   /* Espaçamento da direita */ 
+     width: 250px; 
+     padding: 15px; 
+    background-color: #90dcdf; 
+    color: white; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+    z-index: 1000; /* Garante que fique acima de outros elementos */   
+}
+.caixa_fixa:hover {
+    background-color: #636e72;
+}
+
+.videos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
