@@ -1,11 +1,19 @@
 body {
     background-color: rgb(202, 188, 188);
 }
+
+#titulo {
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    
+}
 a:hover {
     color: darkgreen;
 }
 .tabela {
-    width: 25%; /* largura das tabelas */
+    width: 500px; /* largura das tabelas */
+    margin: auto;
     
 }
 .tabela th,
