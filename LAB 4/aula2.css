@@ -4,8 +4,16 @@ body {
 a:hover {
     color: darkgreen;
 }
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .tabela {
-    width: 25%; /* largura das tabelas */
+    width: 500px; /* largura das tabelas */
+    margin: auto;
     
 }
 .tabela th,
@@ -17,4 +25,9 @@ a:hover {
 td,
 th{
     font-size: 16pt;
+}
+
+.tabela th {
+    color:chocolate;
+    font-family: Arial, Helvetica, sans-serif;
 }

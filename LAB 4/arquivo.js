@@ -11,6 +11,11 @@ function Verificar() {
 
     if (numero == n_aleatorio) {
         document.getElementById("numero").style.setProperty("background-color", "green");
+
+        // let p = document.getElementById('textoResultado');
+
+        // p.textContent = "";
+        // p.textContent('ACERTOUU!!');
         alert('ACERTOUU!!')
 
         // n_aleatorio = Math.floor(Math.random()*100);
@@ -19,13 +24,23 @@ function Verificar() {
     }
     else if (numero > n_aleatorio) {
         document.getElementById("numero").style.setProperty("background-color", "red");
-        alert('Você digitou um número acima do escolhido');
+
+        // let p = document.getElementById('textoResultado');
+
+        // p.textContent = "";
+        // p.textContent('Você digitou um número ACIMA do escolhido !!');
+        
+        alert('Você digitou um número ACIMA do escolhido');
         
     }
     else if (numero < n_aleatorio) {
         document.getElementById("numero").style.setProperty("background-color", "red");
-        alert('Você digitou um número abaixo do escolhido');
-        
+
+        let p = document.getElementById('textoResultado');
+        // p.textContent = "";
+        // p.textContent('Você digitou um número ABAIXO do escolhido !!');
+        alert('Você digitou um número ABAIXO do escolhido');
+        p.document.write('teste')
     }   
 
     
@@ -33,8 +48,14 @@ function Verificar() {
 
 
 
-
-
+function mudarCor() {
+    let cor = document.getElementById('botao');
+    cor.style.backgroundColor = 'blue';
+}
+function mudarCor2() {
+    let cor = document.getElementById('botao');
+    cor.style.backgroundColor = 'white';
+}
 
 
 // window.alert('ESTE É UM ALERTA');
